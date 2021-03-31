@@ -80,8 +80,7 @@ class AR():
             filepath="Translate_"+str(self.videoPort)+".txt"
             out_translate_txt(filepath, rvec[0][0][0], rvec[0][0][1], rvec[0][0][2],tvec[0][0][0], tvec[0][0][1], tvec[0][0][2])
 
-            (roll_angle, pitch_angle, yaw_angle) = rvec[0][0][0] * 180 / pi, rvec[0][0][1] * 180 / pi, rvec[0][0][
-                2] * 180 / pi
+            (roll_angle, pitch_angle, yaw_angle) = rvec[0][0][0] * 180 / pi, rvec[0][0][1] * 180 / pi, rvec[0][0][2] * 180 / pi
             if pitch_angle < 0:
                 roll_angle, pitch_angle, yaw_angle = -roll_angle, -pitch_angle, -yaw_angle
             return roll_angle, pitch_angle, yaw_angle
