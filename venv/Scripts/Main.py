@@ -96,7 +96,6 @@ while(True):
     # キーボード入力待ち
     key = cv2.waitKey(1) & 0xFF
 
-
     # qが押された場合は終了する
     if key == ord('q'):
             break
